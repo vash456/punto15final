@@ -57,9 +57,9 @@ public class Punto1155 {
         System.out.println("\nDigite El valor a retirar ");
         retirar=lector.nextDouble();
         saldo=cliente.getSaldo();
-        if(retirar>saldo)
+        if(retirar>saldo){
              System.out.println("\nSaldo Insuficiente");
-        else{
+        }else{
             saldo=saldo-retirar;
             cliente.setSaldo(saldo);
         }
